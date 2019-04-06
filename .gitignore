@@ -2,3 +2,4 @@ cmake-build-debug
 EBANY_TESTS.txt
 output.txt
 test.sh
+.idea
