@@ -31,8 +31,7 @@ vector<string> split_line(const string &line) {
                            istream_iterator<string>());
     return results;
 };
-const string GREETINGS = "-size \n"+
-                         "+size  set\n" +
+const string GREETINGS = "-size \n"+ "+size  set\n" +
                          "-exec  \n"+
                          "-name  set name of file \n"+
                          "-inum  set inum"+

@@ -11,7 +11,11 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f1bfa9e8-44b2-4b3a-b85d-7744ab71a68d" name="Default Changelist" comment="" />
+    <list default="true" id="f1bfa9e8-44b2-4b3a-b85d-7744ab71a68d" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Filter.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Filter.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flfinder.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/flfinder.cpp" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -21,7 +25,7 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.27905005">
+    <splitter split-orientation="horizontal" split-proportion="0.5379113">
       <split-first>
         <splitter split-orientation="vertical" split-proportion="0.77538073">
           <split-first>
@@ -56,8 +60,8 @@
               <file pinned="false" current-in-tab="true">
                 <entry file="file://$PROJECT_DIR$/Filter.cpp">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="91">
-                      <caret line="28" column="36" selection-start-line="28" selection-start-column="36" selection-end-line="28" selection-end-column="36" />
+                    <state relative-caret-position="451">
+                      <caret line="25" column="39" selection-start-line="25" selection-start-column="39" selection-end-line="25" selection-end-column="39" />
                       <folding>
                         <element signature="e#0#19#0" expanded="true" />
                       </folding>
@@ -90,8 +94,8 @@
               <file pinned="false" current-in-tab="false">
                 <entry file="file://$PROJECT_DIR$/test.sh">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="-4">
-                      <caret column="22" lean-forward="true" selection-start-column="22" selection-end-column="40" />
+                    <state>
+                      <caret column="22" selection-start-column="22" selection-end-column="40" />
                     </state>
                   </provider>
                 </entry>
@@ -105,8 +109,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/flfinder.cpp">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-127">
-                  <caret line="33" column="2" selection-start-line="33" selection-end-line="38" selection-end-column="61" />
+                <state relative-caret-position="19">
+                  <caret line="33" column="37" selection-start-line="33" selection-start-column="37" selection-end-line="33" selection-end-column="37" />
                   <folding>
                     <element signature="e#0#19#0" expanded="true" />
                   </folding>
@@ -125,6 +129,9 @@
       <find>prin</find>
     </findStrings>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
@@ -141,11 +148,11 @@
         <option value="$PROJECT_DIR$/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/execr.cpp" />
         <option value="$PROJECT_DIR$/execr.h" />
-        <option value="$PROJECT_DIR$/Filter.cpp" />
         <option value="$PROJECT_DIR$/Filter.h" />
         <option value="$PROJECT_DIR$/EBANY_TESTS.txt" />
         <option value="$PROJECT_DIR$/test.sh" />
         <option value="$PROJECT_DIR$/flfinder.cpp" />
+        <option value="$PROJECT_DIR$/Filter.cpp" />
       </list>
     </option>
   </component>
@@ -161,6 +168,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -179,15 +187,10 @@
               <item name="cmake-build-debug" type="462c0819:PsiDirectoryNode" />
               <item name="CMakeFiles" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="os_find" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -239,17 +242,18 @@
       <workItem from="1554397440842" duration="3125000" />
       <workItem from="1554467766418" duration="3264000" />
       <workItem from="1554551939250" duration="3744000" />
+      <workItem from="1554558220385" duration="349000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="47532000" />
+    <option name="totallyTimeSpent" value="47881000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15665236" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.15879828" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -330,6 +334,23 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/execrun.cpp" />
+    <entry file="file://$PROJECT_DIR$/Launcher.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="41" column="23" lean-forward="true" selection-start-line="41" selection-start-column="23" selection-end-line="41" selection-end-column="23" />
+          <folding>
+            <element signature="e#55#74#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Filter.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="10" column="21" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file:///Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/usr/include/unistd.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="8417">
@@ -351,30 +372,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Filter.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="10" column="21" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Filter.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="91">
-          <caret line="28" column="36" selection-start-line="28" selection-start-column="36" selection-end-line="28" selection-end-column="36" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4">
-          <caret column="22" lean-forward="true" selection-start-column="22" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/EBANY_TESTS.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -382,20 +379,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Launcher.h">
+    <entry file="file://$PROJECT_DIR$/test.sh">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="41" column="23" lean-forward="true" selection-start-line="41" selection-start-column="23" selection-end-line="41" selection-end-column="23" />
-          <folding>
-            <element signature="e#55#74#0" expanded="true" />
-          </folding>
+        <state>
+          <caret column="22" selection-start-column="22" selection-end-column="40" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/flfinder.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-127">
-          <caret line="33" column="2" selection-start-line="33" selection-end-line="38" selection-end-column="61" />
+        <state relative-caret-position="19">
+          <caret line="33" column="37" selection-start-line="33" selection-start-column="37" selection-end-line="33" selection-end-column="37" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Filter.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="451">
+          <caret line="25" column="39" selection-start-line="25" selection-start-column="39" selection-end-line="25" selection-end-column="39" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
           </folding>

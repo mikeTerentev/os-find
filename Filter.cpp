@@ -34,11 +34,7 @@ bool Filter::filter_all(const string &filepath,const string &filename, struct st
     return isOk;
 }
 bool Filter::filter_nlinks(struct stat& file_stat) {
-    if (nlinks == -1) {
-        return true;
-    } else {
-        return nlinks == file_stat.st_nlink;
-    }
+    return nlinks == -1 ? true : nlinks == file_stat.st_nlink;
 }
 
 bool Filter::filter_name(const std::string &name,struct stat& file_stat) {
@@ -50,11 +46,7 @@ bool Filter::filter_name(const std::string &name,struct stat& file_stat) {
 }
 
 bool Filter::filter_inode(struct stat& file_stat) {
-    if (this->i_node == -1) {
-        return true;
-    } else {
-        return this->i_node == file_stat.st_ino;
-    }
+    return this->i_node == -1 ? true : this->i_node == file_stat.st_ino;
 }
 
 void Filter::printInfo(struct stat& file_stat, const string& filepath) {
