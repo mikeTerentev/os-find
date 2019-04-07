@@ -1,5 +1,5 @@
 cmake-build-debug
-EBANY_TESTS.txt
+et.txt
 output.txt
 test.sh
 .idea
