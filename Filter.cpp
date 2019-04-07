@@ -20,29 +20,22 @@ bool Filter::filter_size(struct stat& file_stat) {
 
 bool Filter::filter_all(const string &filepath,const string &filename, struct stat& file_stat) {
     //cout<<filter_inode(file_stat) << " "<< filter_name(filename,file_stat) << " "<< filter_size(file_stat) << " "<< filter_nlinks(file_stat)<<endl;
-    bool isOk = filter_inode(file_stat)
-                && filter_name(filename,file_stat)
-                && filter_size(file_stat)
-                && filter_nlinks(file_stat);
-    if (!filename.empty() && isOk) {
+    bool isMatched = filter_nlinks(file_stat) && filter_size(file_stat) && filter_name(filename, file_stat) && filter_inode(file_stat);
+    if (!filename.empty() && isMatched) {
         vector<const char *> arguments;
         arguments.push_back(this->exec.c_str());
         arguments.push_back(filename.c_str());
-        launcher.launch(arguments);
+        execLauncher.run(arguments);
         printInfo(file_stat,filepath);
     }
-    return isOk;
+    return isMatched;
 }
 bool Filter::filter_nlinks(struct stat& file_stat) {
     return nlinks == -1 ? true : nlinks == file_stat.st_nlink;
 }
 
 bool Filter::filter_name(const std::string &name,struct stat& file_stat) {
-    if (this->exp_name.empty()) {
-        return true;
-    } else {
-        return this->exp_name == name;
-    }
+    return this->exp_name.empty() ? true : (this->exp_name == name);
 }
 
 bool Filter::filter_inode(struct stat& file_stat) {
@@ -51,9 +44,9 @@ bool Filter::filter_inode(struct stat& file_stat) {
 
 void Filter::printInfo(struct stat& file_stat, const string& filepath) {
     cout << "-------------------------------------------------------------------------------------" << endl;
-    cout << filepath << " | "
-         << "size : " << file_stat.st_size << " | "
+    cout << filepath<<endl;// << " | "
+         /*<< "size : " << file_stat.st_size << " | "
          << "inode : " << file_stat.st_ino << " | "
-         << "nLink : " << file_stat.st_nlink << endl;
+         << "nLink : " << file_stat.st_nlink << endl;*/
     cout <<"-------------------------------------------------------------------------------------" << endl;
 }

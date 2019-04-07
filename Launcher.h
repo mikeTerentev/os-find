@@ -50,7 +50,7 @@ public:
         }
     }
 
-    void launch(const vector<const char *> &args1) {
+    void run(const vector<const char *> &args1) {
         vector<char *> arg_real;
         arg_real.reserve(args1.size());
         for (const char *chars : args1) {

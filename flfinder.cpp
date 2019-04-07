@@ -31,11 +31,13 @@ vector<string> split_line(const string &line) {
                            istream_iterator<string>());
     return results;
 };
-const string GREETINGS = "-size \n"+ "+size  set\n" +
-                         "-exec  \n"+
-                         "-name  set name of file \n"+
-                         "-inum  set inum"+
-                         "-nlinks set number of hardlinks";
+const string GREETINGS = R"BLOCK(
+[+/-/=]size [sz] set size boundaries for files
+-exec [filepath] set executable file
+-name [filename] set name of file
+-inum [number]  set inum id
+-nlinks [number] set number of hardlinks";
+)BLOCK";
 
 void parseArg(int i, Filter &finder, const string &type, const string &value) {
     if (type == "-inum") {

@@ -51,7 +51,7 @@ public:
     bool filter_inode(struct stat& file_stat);
 
 private:
-    Launcher launcher;
+    Launcher execLauncher;
     int i_node = -1;
     string exp_name = "";
     int size = -1;
