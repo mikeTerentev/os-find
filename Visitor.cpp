@@ -38,8 +38,8 @@ void Visitor::process(Filter & filter) {
                 string nxt = curdir.s + "/" + filename;
                 queue.emplace(opendir(nxt.c_str()), nxt);
             }
-
         }
+        closedir(curdir.f);
     }
 }
 

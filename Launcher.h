@@ -15,14 +15,6 @@ using namespace std;
 
 class Launcher{
 public:
-    char ** convert(vector<char *>& vector) {
-        char** arr = new char* [vector.size() + 1];
-        arr[vector.size()] = nullptr;
-        for (size_t i = 0; i < vector.size(); ++i) {
-            arr[i] = vector[i];
-        }
-        return arr;
-    }
 
     void printErrorMessage(const string &message){
         cerr <<  message + " : "<< strerror(errno) << endl;
